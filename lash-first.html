@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container-pai {
+            background: #f1f1f1;
+            display: flex;
+            flex-direction: row;
+            align-items: top;
+            justify-content: flex-start;
+            gap: 20px;
+            min-height: 100h%;
+            max-height: 100h%;
+            padding: 0 20px; /* Padding inicial */
+            position: relative;
+        }
+
+        @media (min-width: 992px) {
+            /* Se a largura da página for maior que 991px */
+            .container-pai {
+                padding-right: 280px;
+                padding-left: 280px;
+            }
+        }
+
+        .hero {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            min-width: 27%;
+            padding: 20px 0 0 0;
+        }
+
+        .texto-responsivo {
+            font-size: 36px;
+            color: #6b6b6b;
+            margin: 0;
+        }
+
+        .outro-texto {
+            font-size: 12px;
+            color: #8b8b8b;
+            margin: 0;
+        }
+
+        .whatsapp-button, .instagram-button {
+            background: #000000;
+            color: #ffffff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            gap: 20px;
+        }
+
+        .brand-image {
+            align-self: flex-start;
+            border: 1px solid #f90000;
+            border-radius: 200px;
+            width: 100px;
+            height: 100px;
+            margin-bottom: 25px;
+        }
+
+        .whatsapp-icon {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 40px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 1px 1px 2px #888888;
+            z-index: 1000;
+            animation: blink 2s infinite; /* Adiciona a animação de piscar */
+        }
+
+        @keyframes blink {
+            50% {
+                opacity: 0;
+            }
+        }
+
+        .todas_imagens {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-width: 30%;
+            max-width: 40%;
+            height: 100%;
+            gap: 15px;
+            padding: 10px;
+        }
+
+        .imagem {
+            margin: 5;
+            min-width: 236px;
+            max-width: 280px;
+            min-height: 236px;
+            max-height: 280px;
+            border-radius: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-pai">
+        <div class="hero">
+            <img class="brand-image" src="https://7c5ac1a3cd6d7f14ba9e7e1a43e2bdf0.cdn.bubble.io/f1700658532761x935274302515726200/Logo%20preto.png" alt="Brand Image">
+            <div class="texto-responsivo">QUERO VER, OUTRA VEZ, TEUS OLHINHOS DE NOITE SERENA</div>
+            <div class="outro-texto">Foi assim, foi pra lá, vem para Porto dos Cães</div>
+            <button class="whatsapp-button" onclick="window.open('https://wa.me/+5551981537697?text=Adorei%20seu%20artigo', '_blank')">
+                <i class="fa fa-whatsapp" aria-hidden="true"></i> Whatsapp
+            </button>
+            <button class="instagram-button" onclick="window.open('https://instagram.com/instagram', '_blank')">
+                <i class="fa fa-instagram" aria-hidden="true"></i> Instagram
+            </button>
+        </div>
+        <div class="todas_imagens">
+            <img class="imagem" src="https://7c5ac1a3cd6d7f14ba9e7e1a43e2bdf0.cdn.bubble.io/f1700583980291x866347291704967300/pngwing.com%20%2852%29.png" alt="Imagem 1">
+            <img class="imagem" src="https://7c5ac1a3cd6d7f14ba9e7e1a43e2bdf0.cdn.bubble.io/f1700581851364x524680709250585860/pngwing.com%20%2839%29.png" alt="Imagem 2">
+            <img class="imagem" src="https://7c5ac1a3cd6d7f14ba9e7e1a43e2bdf0.cdn.bubble.io/f1700581837277x812883207537596400/pngwing.com%20%2840%29.png" alt="Imagem 3">
+        </div>
+        <a href="https://wa.me/5551981537697)?text=Adorei%20seu%20artigo" class="whatsapp-icon" target="_blank">
+            <i style="margin-top:16px" class="fa fa-whatsapp"></i>
+        </a>
+    </div>
+</body>
+</html>
